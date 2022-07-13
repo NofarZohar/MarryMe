@@ -14,4 +14,32 @@ async function getRing(){
   return res;
 }
 
+async function getOrders(){
+  var client = new MongoClient(uri, {useUnifiedTopology: true});
+  await client.connect();
+  const db = client.db("MarryMe");
+
+  let collection = db.collection('product');
+  let res = await collection.find({}).toArray();
+
+  return res;
+}
+
+
+
+async function searchRing(query){
+  var client = new MongoClient(uri, {useUnifiedTopology: true});
+  await client.connect();
+  const db = client.db("MarryMe");
+
+  let collection = db.collection('product');
+  let res = await collection.find({name:query}).toArray();
+
+  return res;
+}
+
 exports.getRing = getRing;
+exports.searchRing = searchRing;
+exports.getOrders= getOrders;
+
+

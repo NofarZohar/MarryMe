@@ -6,12 +6,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
-  "author": "",
+  "author": "Nofar cohen, Sharon refai and Raz Basteker",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
     "mongodb": "^4.6.0",
     "nodemon": "^2.0.16"
   },
-  "description": ""
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NofarZohar/MarryMe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NofarZohar/MarryMe/issues"
+  },
+  "homepage": "https://github.com/NofarZohar/MarryMe#readme",
+  "description": "Online wedding rings store by Nofar cohen, Sharon Refai and Raz Basteker"
 }
